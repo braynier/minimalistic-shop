@@ -1,15 +1,23 @@
-import localFont from "next/font/local";
+import { Poppins, Bebas_Neue } from "next/font/google";
 import "./globals.css";
+import Header from "./_components/Header";
+import Footer from "./_components/Footer";
+import { CartProvider } from "./_contexts/CartContext";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-poppins",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const bebas = Bebas_Neue({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+  style: ["normal"],
+  variable: "--font-bebas-neue",
 });
 
 export const metadata = {
@@ -20,10 +28,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${poppins.variable} ${bebas.variable}`}>
+        <CartProvider>
+          <Header />
+          <main>{children}</main>
+        </CartProvider>
+        <Footer />
       </body>
     </html>
   );
