@@ -9,7 +9,7 @@ function Footer() {
           </p>
           <form className="flex flex-col gap-y-3 md:flex-row">
             <input
-              className="on mr-3 border-2 px-3 py-2 text-lg text-[#000] outline-none"
+              className="border-2 px-3 py-2 text-lg text-[#000] outline-none md:mr-3"
               type="text"
               placeholder="Your email"
             />
