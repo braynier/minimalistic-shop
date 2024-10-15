@@ -16,7 +16,7 @@ function Cta() {
           </div>
           <div className="flex flex-1 flex-col items-center justify-center gap-y-3 bg-[#e9e9e9] px-2 md:px-20">
             <h2 className="font-bebas text-[42px]">
-              Autumn Collection – Embrace the Season with Confidence
+              Autumn Collection - Embrace the Season with Confidence
             </h2>
             <p>
               As the crisp air of autumn sets in, our carefully curated

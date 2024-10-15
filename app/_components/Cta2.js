@@ -25,8 +25,8 @@ function Cta() {
             </p>
             <p>
               Enjoy a <span className="font-bold">20% discount</span> on your
-              first purchase! Don’t miss this chance to elevate your wardrobe
-              with quality fashion that lasts.
+              first purchase! Don&apos;t miss this chance to elevate your
+              wardrobe with quality fashion that lasts.
             </p>
             <Link
               href="/products"
