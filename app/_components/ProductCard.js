@@ -30,7 +30,7 @@ function ProductCard({ product }) {
           </button>
           <Link
             className="flex h-12 w-12 items-center justify-center bg-white text-primary drop-shadow-xl"
-            href="/"
+            href={`/products/${id}`}
           >
             <BsEyeFill />
           </Link>

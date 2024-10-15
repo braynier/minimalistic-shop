@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Cta() {
   return (
     <section className="mb-16">
-      <div className="mx-auto max-w-7xl">
-        <div className="flex h-[640px]">
-          <div className="relative h-full w-full flex-1">
+      <div className="mx-auto max-w-7xl px-5">
+        <div className="flex h-[640px] flex-col md:flex-row">
+          <div className="relative hidden h-full w-full flex-1 md:block">
             <Image
               className="object-cover"
               src="/cta/cta2.jpg"
@@ -13,7 +14,7 @@ function Cta() {
               alt="Autumn collection of clothes"
             />
           </div>
-          <div className="flex flex-1 flex-col items-center justify-center gap-y-3 bg-[#e9e9e9] px-20">
+          <div className="flex flex-1 flex-col items-center justify-center gap-y-3 bg-[#e9e9e9] px-2 md:px-20">
             <h2 className="font-bebas text-[42px]">
               Autumn Collection – Embrace the Season with Confidence
             </h2>
@@ -24,9 +25,12 @@ function Cta() {
               each piece promises comfort and durability that lasts through the
               season and beyond.
             </p>
-            <button className="self-baseline border-2 border-primary bg-primary px-3 py-2 text-lg uppercase text-secondary transition duration-300 hover:bg-[#e9e9e9] hover:text-primary">
+            <Link
+              href="/products"
+              className="self-baseline border-2 border-primary bg-primary px-3 py-2 text-lg uppercase text-secondary transition duration-300 hover:bg-[#e9e9e9] hover:text-primary"
+            >
               Shop now
-            </button>
+            </Link>
           </div>
         </div>
       </div>
