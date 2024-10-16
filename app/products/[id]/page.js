@@ -1,4 +1,5 @@
 import ProductDetails from "@/app/_components/ProductDetails";
+import ProductsTrending from "@/app/_components/ProductsTrending";
 import Sidebar from "@/app/_components/Sidebar";
 import Spinner from "@/app/_components/Spinner";
 import { getSingleProduct } from "@/app/_lib/data";
@@ -17,6 +18,7 @@ export default async function Page({ params }) {
   return (
     <>
       <ProductDetails product={product} />
+      <ProductsTrending />
       <Sidebar />
     </>
   );

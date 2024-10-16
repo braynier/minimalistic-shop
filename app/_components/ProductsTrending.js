@@ -10,7 +10,7 @@ import SwiperNavButtons from "./SwiperNavButtons";
 import { getProducts } from "../_lib/data";
 import Spinner from "./Spinner";
 
-export default function ProductsFeatured() {
+export default function ProductsTrending() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -38,12 +38,10 @@ export default function ProductsFeatured() {
   }
 
   return (
-    <section className="mb-16 py-12" id="featured">
+    <section className="mb-16" id="featured">
       <div className="mx-auto max-w-7xl px-5">
         <div className="mb-3">
-          <h2 className="font-bebas text-[30px] tracking-wide">
-            Our new collections
-          </h2>
+          <h2 className="font-bebas text-[30px] tracking-wide">Trending now</h2>
         </div>
 
         <Swiper

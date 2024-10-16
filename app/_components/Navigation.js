@@ -20,7 +20,7 @@ function Navigation() {
           <Link href="/products">Products</Link>
         </li>
         <li className="text-base font-semibold uppercase">
-          <Link href="/">Product Page</Link>
+          <Link href="/products/3">Product Page</Link>
         </li>
         <li
           className="relative flex cursor-pointer text-[30px]"
@@ -32,7 +32,16 @@ function Navigation() {
           </div>
         </li>
       </ul>
-      <div className="md:hidden">
+      <div className="flex items-center justify-center gap-x-5 md:hidden">
+        <button
+          className="relative flex cursor-pointer text-[30px]"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <IoBagOutline />
+          <div className="absolute -right-2 flex h-[18px] w-[18px] items-center justify-center rounded-full bg-red-500 text-[12px] text-white">
+            {cartAmount}
+          </div>
+        </button>
         <button onClick={toggleMobileMenu}>
           {mobileMenuOpen ? (
             <IoClose className="text-3xl" />
@@ -56,10 +65,11 @@ function Navigation() {
               </Link>
             </li>
             <li className="text-3xl font-semibold uppercase">
-              <Link href="/" onClick={toggleMobileMenu}>
+              <Link href="/products/3" onClick={toggleMobileMenu}>
                 Product Page
               </Link>
             </li>
+
             <li
               className="relative flex cursor-pointer text-[50px]"
               onClick={() => setIsOpen(!isOpen)}

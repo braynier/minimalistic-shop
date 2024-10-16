@@ -2,13 +2,14 @@
 
 import Image from "next/image";
 import { useCart } from "../_contexts/CartContext";
+import ProductsTrending from "./ProductsTrending";
 
 function ProductDetails({ product }) {
   const { image, title, price, description, id } = product;
   const { addToCart } = useCart();
 
   return (
-    <section className="flex h-screen items-center">
+    <section className="flex h-screen items-center sm:h-[70vh]">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center lg:flex-row">
           <div className="mb-8 flex flex-1 items-center justify-center lg:mb-0">
