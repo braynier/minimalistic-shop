@@ -9,7 +9,7 @@ function ProductDetails({ product }) {
   const { addToCart } = useCart();
 
   return (
-    <section className="flex h-screen items-center sm:h-[70vh]">
+    <section className="mb-8 mt-36 flex items-center px-3">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center lg:flex-row">
           <div className="mb-8 flex flex-1 items-center justify-center lg:mb-0">

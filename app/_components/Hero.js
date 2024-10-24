@@ -14,6 +14,7 @@ function Hero() {
             fill
             objectFit="cover"
             placeholder="blur"
+            sizes="(max-width: 768px) 100vw, 33vw"
             alt="Picture of a young woman with a scarf"
           />
         </div>
@@ -23,6 +24,7 @@ function Hero() {
             fill
             objectFit="cover"
             priority={true}
+            sizes="(max-width: 768px) 100vw, 33vw"
             placeholder="blur"
             alt="Picture of a woman wearing a yellowish sweater"
           />
@@ -46,6 +48,7 @@ function Hero() {
             src={image3}
             fill
             objectFit="cover"
+            sizes="(max-width: 768px) 100vw, 33vw"
             placeholder="blur"
             alt="Picture of a man wearing yellowish autumn coat"
           />
